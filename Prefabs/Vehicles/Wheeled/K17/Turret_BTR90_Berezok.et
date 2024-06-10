@@ -1,0 +1,12 @@
+Turret : "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et" {
+ ID "51ACD0965653D003"
+ components {
+  SlotManagerComponent "{5E356B9303D2FD46}" {
+   Slots {
+    RegisteringComponentSlotInfo Comandante {
+     Prefab "{19B425B4CC285518}Prefabs/Vehicles/Wheeled/K17/Turret_BTR90_CommanderBerezhok.et"
+    }
+   }
+  }
+ }
+}

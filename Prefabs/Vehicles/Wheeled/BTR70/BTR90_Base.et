@@ -4,7 +4,24 @@ Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     RegisteringComponentSlotInfo Turret {
-     Prefab "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et"
+     Offset 0 -0.7401 1.7677
+     Prefab "{5137C3E923C1CC7C}Prefabs/Vehicles/Wheeled/K17/Turret_BTR90_Berezok.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{6195194F37940EA2}" {
+     ContextName "gunner_seat"
+     Position PointInfo "{6195194F22455B15}" {
+      Offset -0.2886 1.0053 0.9779
+     }
+    }
+    UserActionContext "{6195194F37F9B938}" {
+     ContextName "commander_seat"
+     Position PointInfo "{6195194E8983102D}" {
+      Offset 0.2886 1.0053 0.9779
+     }
     }
    }
   }
