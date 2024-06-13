@@ -8,6 +8,15 @@ Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
      Prefab "{5137C3E923C1CC7C}Prefabs/Vehicles/Wheeled/K17/Turret_BTR90_Berezok.et"
     }
    }
+   SlotMappers {
+    CompartmentToSlotMapping Commandante {
+     SlotName "Comandante"
+     Coverage 0.1
+     Compartments {
+      "PilotCompartment" "Passenger_r01" "Passenger_r02" "Passenger_l03" "Passenger_r03" "Passenger_l04" "Passenger_r04" "Passenger_l05" "Passenger_r05" "TurretCompartment"
+     }
+    }
+   }
   }
   ActionsManagerComponent "{C97BE5489221AE18}" {
    ActionContexts {
