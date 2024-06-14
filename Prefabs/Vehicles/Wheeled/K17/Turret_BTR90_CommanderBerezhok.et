@@ -6,12 +6,20 @@ Turret : "{3AD94A109C91973B}Prefabs/Vehicles/Wheeled/K17/Turret_K17_CommanderBer
     RHS_TurretCompartmentSlot TurretCompartment {
      CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
       ParentContextList + {
-       "door_l01"
+       "door_l01" "door_r01"
       }
+      "Sort Priority" 1
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
       ParentContextList {
        "commander_seat"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
+       ParentContextList {
+        "door_l01" "door_r01"
+       }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
@@ -22,15 +30,29 @@ Turret : "{3AD94A109C91973B}Prefabs/Vehicles/Wheeled/K17/Turret_K17_CommanderBer
       CompartmentDoorInfo "{50B917CA9C90BD91}" {
        ContextName "door_l01"
        EntryPositionInfo PointInfo "{50B917CA96E757AA}" {
-        Offset -2.0282 -3.1686 0.551
+        Offset -2.131 -3.1686 0.551
        }
        ExitPositionInfo PointInfo "{608F2EE82945DDA0}" {
-        Offset -2.0282 -3.1686 0.551
+        Offset -0.7993 -2.3201 0.551
+        Angles 0 -90 0
        }
+       EntryPositionAligning 0
       }
       CompartmentDoorInfo "{619A3269411A7B00}" {
        ContextName "door_r01"
+       EntryPositionInfo PointInfo "{619C48E3BFEE71ED}" {
+        PivotID "Commander_NEW_Berezhok"
+        Offset 1.4099 -3.1686 0.551
+       }
+       ExitPositionInfo PointInfo "{619C48E3BE6B5C0A}" {
+        PivotID "Commander_NEW_Berezhok"
+        Offset -0.1077 -2.3201 0.551
+        Angles 0 90 0
+       }
       }
+     }
+     UIInfo UIInfo "{50870A10DCCDED83}" {
+      Name "Turret Commander"
      }
      DirectAimMode 1
     }

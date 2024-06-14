@@ -6,12 +6,19 @@ Turret : "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et" 
     RHS_TurretCompartmentSlot TurretCompartment {
      CompartmentAction RHS_GetInK17UserAction "{5086CC2CFDD3A05A}" {
       ParentContextList {
-       "door_l01"
+       "door_l01" "door_r01"
       }
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
       ParentContextList {
        "gunner_seat"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
+       ParentContextList {
+        "door_l01" "door_r01"
+       }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
@@ -20,6 +27,14 @@ Turret : "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et" 
      DoorInfoList {
       CompartmentDoorInfo "{50B917CA9C90BD91}" {
        ContextName "a"
+       EntryPositionInfo PointInfo "{50B917CA96E757AA}" {
+        Offset -1.5868 0.7552 -1.8428
+        Angles 0 0 0
+       }
+       ExitPositionInfo PointInfo "{608F2EE8B0901FC2}" {
+        Offset -0.4025 1.6242 -1.8591
+        Angles 0 -90 0
+       }
        EntryPositionAligning 0
       }
       CompartmentDoorInfo "{608F2EE93475AD1F}" {
@@ -28,12 +43,16 @@ Turret : "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et" 
         Offset -1.5868 0.7552 -1.8428
        }
        ExitPositionInfo PointInfo "{608F2EE84884BD05}" {
-        Offset -1.5273 0.7552 -1.8442
+        Offset -0.4025 1.6242 -1.8591
         Angles 0 -90 0
        }
        EntryPositionAligning 0
       }
       CompartmentDoorInfo "{6092F404D41C0D32}" {
+       ExitPositionInfo PointInfo "{608F2EE84884BD05}" {
+        Offset -0.4025 1.6242 -1.8591
+        Angles 0 -90 0
+       }
        EntryPositionAligning 0
       }
       CompartmentDoorInfo "{619A32614F2EF978}" {
@@ -42,10 +61,19 @@ Turret : "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et" 
         Offset -1.7518 0.7437 -1.8591
        }
        ExitPositionInfo PointInfo "{619A32610935F5CE}" {
-        Offset -1.9686 0.7692 -1.8591
+        Offset -0.4025 1.6242 -1.8591
        }
        EntryPositionAligning 0
        SeatPositionAligning 0
+      }
+      CompartmentDoorInfo "{619B156A1AF62F9C}" {
+       ContextName "door_r01"
+       EntryPositionInfo PointInfo "{619B156A102CDEEB}" {
+        Offset 1.7518 0.7437 -1.8591
+       }
+       ExitPositionInfo PointInfo "{619B156A15B3D7FA}" {
+        Offset 0.4025 1.6242 -1.8591
+       }
       }
      }
     }
