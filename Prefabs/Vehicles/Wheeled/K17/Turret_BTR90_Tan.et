@@ -1,0 +1,13 @@
+Turret : "{D795A33C9A6355C5}Prefabs/Vehicles/Wheeled/K17/Turret_BTR90.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{619F1B0C606B0A1B}" {
+     SourceMaterial "Turet_Berezhok"
+     AssignedMaterial "{2C8A3DD0AAD4677D}Assets/Vehicles/Wheeled/K17bumerang/Data/tan/Turet_Berezhok_tan.emat"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{EB1E0B6202AAE6A5}Prefabs/Vehicles/Wheeled/K17/Turret_BTR90_ATGM_Tan.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -54,6 +54,7 @@ Turret : "{3AD94A109C91973B}Prefabs/Vehicles/Wheeled/K17/Turret_K17_CommanderBer
      UIInfo UIInfo "{50870A10DCCDED83}" {
       Name "Turret Commander"
      }
+     BaseCoverage 0.3
      DirectAimMode 1
     }
    }
