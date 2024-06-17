@@ -9,6 +9,14 @@ Vehicle : "{12F0D9F8E0F3FC58}Prefabs/Vehicles/Wheeled/BTR90/BTR90MGL.et" {
     }
    }
   }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "FIA"
+    m_aAutoLabels {
+     12 122
+    }
+   }
+  }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     RegisteringComponentSlotInfo Turret {

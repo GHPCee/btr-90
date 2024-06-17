@@ -49,6 +49,48 @@ Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
     }
    }
   }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "BTR-90_Base"
+    Icon "{95F49CBE9FF7A0CB}UI/Textures/Editor/EditableEntities/Vehicles/EditableEntity_Vehicle_Apc.edds"
+    m_sFaction "USSR"
+    m_aAuthoredLabels + {
+     20 21 37 200 26 53
+    }
+    m_aAutoLabels {
+     10 122
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{6052A79ADDA6C7A8}" {
+     }
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 975
+     }
+     SCR_EntityBudgetValue "{5EE71CA1677C234F}" {
+     }
+     SCR_EntityBudgetValue "{5EF07CE1D3329EE6}" {
+      m_BudgetType RANK_SERGEANT
+      m_Value 3
+     }
+    }
+    m_bEditorPlaceAsOneGroup 0
+    m_aOccupantFillCompartmentTypes {
+     2 0 1
+    }
+    m_aCrewEntityBudgetCost {
+     SCR_EntityBudgetValue "{5A5EA70B9E8C8CFC}" {
+      m_BudgetType AI
+      m_Value 2
+     }
+    }
+    m_aPassengerEntityBudgetCost {
+     SCR_EntityBudgetValue "{5A5EA70B9E84A0AA}" {
+      m_BudgetType AI
+      m_Value 6
+     }
+    }
+   }
+  }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     RegisteringComponentSlotInfo Turret {
