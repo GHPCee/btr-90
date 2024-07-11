@@ -31,8 +31,12 @@ Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
     }
     CargoCompartmentSlot ssfafa {
      CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+      }
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+      }
      }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       Enabled 0
@@ -40,8 +44,12 @@ Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
     }
     CargoCompartmentSlot asdasdsdf {
      CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+      }
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+      }
      }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       Enabled 0
