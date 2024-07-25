@@ -97,6 +97,17 @@ Turret : "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et" 
        "x"
       }
      }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
+       ParentContextList {
+        "door_l01" "door_r01"
+       }
+       m_bInteriorOnly 0
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       m_bExteriorOnly 0
+      }
+     }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
       Offset 0.1675 0.2954 0.8611
      }
