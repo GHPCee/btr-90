@@ -1,0 +1,12 @@
+Vehicle : "{E39FE3AACD9F6A09}Prefabs/Vehicles/Wheeled/BTR90/BTR90_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{A51E625894D3B625}Prefabs/Vehicles/Wheeled/K17/Turret_BTR90_ATGM_GL.et"
+    }
+   }
+  }
+ }
+}

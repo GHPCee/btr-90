@@ -1,3 +1,26 @@
 Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
  ID "BBCBA43A9778AE21"
+ components {
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Offset 0 -0.7401 1.7677
+     Prefab "{5137C3E923C1CC7C}Prefabs/Vehicles/Wheeled/K17/Turret_BTR90_Base.et"
+    }
+   }
+   SlotMappers {
+    CompartmentToSlotMapping Turret {
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{54A2A290B157C112}" {
+     Position PointInfo "{54A2A290B157C10D}" {
+      Offset -0.0793 -0.0083 -0.0125
+     }
+    }
+   }
+  }
+ }
 }

@@ -1,0 +1,139 @@
+Turret : "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et" {
+ ID "51ACD0965653D003"
+ components {
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{50B917CA9C90BD91}" {
+     AnimDoorIndex 0
+     ContextName "door_l01"
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{61F309C32F64DF64}" {
+      ParentContextList {
+       "door_l01"
+      }
+      UIInfo SCR_ActionUIInfo "{60B8C998DB579870}" {
+       Name "#AR-UserAction_Open"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 5
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{61F309C320CC8C28}" {
+      ParentContextList {
+       "door_l01"
+      }
+      UIInfo SCR_ActionUIInfo "{60B8C998DB579870}" {
+       Name "#AR-UserAction_Close"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 5
+     }
+     EntryPositionInfo PointInfo "{50B917CA96E757AA}" {
+      Offset -1.8235 0.7426 3.3564
+      Angles 0 90 0
+     }
+     ExitPositionInfo PointInfo "{608F2EE8B0901FC2}" {
+      Offset -1.8235 0.7426 3.3564
+      Angles 0 -90 0
+     }
+    }
+    CompartmentDoorInfo "{61F309C36B3408EC}" {
+     ContextName "door_r01"
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{61F309C29A33BD70}" {
+      ParentContextList {
+       "door_r01"
+      }
+      UIInfo SCR_ActionUIInfo "{60B8C998DB579870}" {
+       Name "#AR-UserAction_Open"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 5
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{61F309C295F5BED1}" {
+      ParentContextList {
+       "door_r01"
+      }
+      UIInfo SCR_ActionUIInfo "{60B8C998DB579870}" {
+       Name "#AR-UserAction_Close"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 5
+     }
+     EntryPositionInfo PointInfo "{50B917CA96E757AA}" {
+      PivotID "rear_door_getin"
+      Offset 1.8235 0.7426 3.9248
+      Angles 0 -90 0
+     }
+     ExitPositionInfo PointInfo "{608F2EE8B0901FC2}" {
+      PivotID "rear_door_getin"
+      Offset 1.8235 0.7426 3.3564
+      Angles 0 90 0
+     }
+     AlignDuringGetOut 1
+     GetInAligningTeleport 1
+     GetOutAligningTeleport 1
+     GetInSeatAligningOnEvent 1
+     GetOutAligningOnEvent 1
+     FakeDoor 1
+     AccessibilitySettings CompartmentAccessibilityContext "{61F309C313570289}" {
+     }
+    }
+   }
+   CompartmentSlots {
+    RHS_TurretCompartmentSlot TurretCompartment {
+     CompartmentAction RHS_GetInK17UserAction "{5086CC2CFDD3A05A}" {
+      ParentContextList {
+       "door_l01" "door_r01"
+      }
+     }
+     GetOutAction RHS_GetOutK17UserAction "{509D56664FF79DDB}" {
+      ParentContextList {
+      }
+     }
+     JumpOutAction RHS_JumpOutK17UserAction "{5D0B1D47DC1C5730}" {
+      ParentContextList {
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
+      ParentContextList {
+       "x"
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
+      Offset 0.1675 0.2954 0.8611
+     }
+     DoorInfoList {
+      0 1
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{5E356B9303D2FD46}" {
+   Slots {
+    RegisteringComponentSlotInfo Comandante {
+     Prefab ""
+    }
+   }
+  }
+  ActionsManagerComponent "{51ACD09C7181BA0B}" {
+   ActionContexts {
+    UserActionContext "{6107222E0030333B}" {
+     ContextName "x"
+     Position PointInfo "{5EC5119E2465F248}" {
+      Offset -0.2717 2.0662 -0.8474
+     }
+    }
+    UserActionContext "{61F11E28B5286F93}" {
+     ContextName "t_gunner"
+     Position PointInfo "{61F11E28AD848F58}" {
+      PivotID "Gunner_idle"
+     }
+    }
+   }
+  }
+  VehicleAnimationComponent "{5C829B12B0DD5F91}" {
+   AnimInjection AnimationAttachmentInfo "{5C829B12B0DD5F90}" {
+    AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
+    AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
+   }
+  }
+ }
+}
