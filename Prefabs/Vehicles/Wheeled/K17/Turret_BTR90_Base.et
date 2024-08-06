@@ -1,6 +1,14 @@
 Turret : "{78E9F4C87A36268F}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Berezok.et" {
  ID "51ACD0965653D003"
  components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{620C3671DC154042}" {
+     SourceMaterial "Hull"
+     AssignedMaterial "{EF680AFE8717508F}Assets/Vehicles/Wheeled/UAZ469/Data/invisible_emat.emat"
+    }
+   }
+  }
   SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
    DoorInfoList {
     CompartmentDoorInfo "{50B917CA9C90BD91}" {
